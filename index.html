@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1> REGISTRATION FORM</h1>
+    </header>
+
+  
+    <div class="container">
+
+        <div class="submitted">
+            <p>Thanks,your form has been Submitted 👍 </p>
+        </div>
+    <form action="POST">
+        <label for="Full-Name">Full-Name</label>
+        <input type="text" name="fullName" id="fullName" required>
+        <p>Enter a valid name</p>
+        <label for="UserId">UserId</label>
+        <input type="text" name="userId" id="userId" required>
+        <p>Must begin with letters or hyphen(of length 2-5) and optionally end with numbers</p>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <p>Must contain atleast 8 characters(special characters @,-,_.?) are allowed</p>
+        <label for="zipCode">ZipCode</label>
+        <input type="text" name="zipcode" id="zipcode" required>
+        <p>6 digit area code</p>
+        <label for="Sex" id="sex">Sex:</label>
+       <li>
+        <input type="radio" name="Sex" value="Male" required>
+        <label for="">Male</label>
+       </li>
+       <li>
+        <input type="radio" name="Sex" value="Female" required>
+        <label for="" id="female">Female</label>
+       
+       </li>
+        <br>
+        <label for="nin">NIN</label>
+        <input type="password" required name="NIN">
+        <p>numbers only(length 11)</p>
+        <label for="telephone">Mobile</label>
+        <input type="text" name="Mobile" id="Mobil">
+        <p>Enter a valid Nigerian number beginning with +234 </p>
+        <label for="Genotype">Genotype</label>
+        <input type="text" required name="Genotype">
+        <p>Invalid Genotype</p>
+        <label for="City">City</label>
+        <input type="text" name="city">
+        <p>Can't contain numbers or special characters</p>
+        <label for="email">E-mail</label>
+        <input type="text" name="Email"required>
+        <p>Enter a valid e-mail address</p>
+        <label for="Record-file">Medical <span id="record"> Record</span></label>
+        <input type="file" name="record-file" id="record-file">
+        <input type="submit" value="submit" id="submit">
+    </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
